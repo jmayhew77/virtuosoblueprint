@@ -1,0 +1,51 @@
+*{box-sizing:border-box} :root{--bg:#0f1115;--card:#141821;--text:#e7e9ee;--muted:#b7bdc9;--brand:#6ee7ff;--brand2:#8b5cf6}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#0d1014,#0f1115 30%)}
+.container{width:min(1120px,92vw);margin:0 auto}
+a{text-decoration:none;color:var(--brand)}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid rgba(255,255,255,.1)}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#081018;font-weight:700}
+.btn.ghost{background:transparent;color:var(--text)}
+.btn.small{padding:8px 12px;font-size:14px}
+.lead{font-size:1.125rem;color:var(--muted)}
+.site-header{position:sticky;top:0;backdrop-filter:blur(10px);background:rgba(15,17,21,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
+.site-header .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:800;letter-spacing:.3px}
+.hero{padding:72px 0 28px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.hero h1{font-size:clamp(32px,6vw,56px);margin:0 0 12px}
+.hero .cta-row{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+.hero .trust{margin-top:14px;color:var(--muted);font-size:14px}
+.hero-media .video-card{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden}
+.hero-media img{width:100%;height:auto;display:block;opacity:.9}
+.play{position:absolute;bottom:12px;right:12px;border:none;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#081018;padding:10px 14px;border-radius:999px;cursor:pointer;font-weight:800}
+.page-hero{padding:56px 0 24px}
+.ribbons{padding:16px 0 8px}
+.ribbons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ribbon{background:var(--card);border:1px solid rgba(255,255,255,.06);padding:10px 12px;border-radius:12px;text-align:center;font-size:14px;color:var(--muted)}
+.learn,.program,.proof,.faq,.apply{padding:56px 0}
+h2{font-size:clamp(24px,4vw,36px);margin:0 0 10px}
+.sub{color:var(--muted);margin-bottom:26px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+.timeline{display:grid;gap:14px;margin-top:16px}
+.step{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px}
+.step-num{width:36px;height:36px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#081018;display:flex;align-items:center;justify-content:center;font-weight:800;margin-top:2px}
+.slider{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px;overflow:hidden}
+.slides{display:flex;transition:transform .4s ease}
+.slide{min-width:100%;padding-right:12px}
+.prev,.next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.2);color:var(--text);width:36px;height:36px;border-radius:999px;cursor:pointer}
+.prev{left:8px}.next{right:8px}
+.apply-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;align-items:start}
+.apply-card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+.signup{display:grid;gap:10px;max-width:420px}
+.signup input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#0e1219;color:var(--text)}
+.signup .small{color:var(--muted);font-size:12px}
+.site-footer{padding:28px 0 36px;border-top:1px solid rgba(255,255,255,.06)}
+.footer-grid{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.footer-nav a{margin-left:12px;color:var(--muted)}
+.modal{position:fixed;inset:0;display:none}
+.modal[aria-hidden="false"]{display:block}
+.modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.6)}
+.modal-dialog{position:relative;width:min(720px,92vw);margin:6vh auto;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+.modal-close{position:absolute;top:10px;right:10px;background:transparent;border:none;color:var(--text);font-size:22px;cursor:pointer}
+@media(max-width:900px){.hero-grid,.apply-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.ribbons-grid{grid-template-columns:repeat(2,1fr)}}

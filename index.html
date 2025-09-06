@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>High Range Mastery • Home</title>
+  <meta name="description" content="A structured system for effortless high range on the French horn." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">High Range Mastery</a>
+      <nav>
+        <a href="masterclass.html">Masterclass</a>
+        <a href="curriculum.html">Curriculum</a>
+        <a href="testimonials.html">Results</a>
+        <a href="apply.html">Apply</a>
+        <a class="btn small" href="apply.html#optin">Get Access</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <h1>Effortless High Range for Horn</h1>
+          <p class="lead">Expand your top notes, reduce tension, and keep your sound—no embouchure overhaul required.</p>
+          <div class="cta-row">
+            <a href="masterclass.html" class="btn primary">Watch Free Masterclass</a>
+            <a href="curriculum.html" class="btn ghost">See the Program</a>
+          </div>
+          <div class="trust"><span>Led by Jon Anderson — professional hornist & educator</span></div>
+        </div>
+        <div class="hero-media">
+          <div class="video-card">
+            <img src="assets/hero.jpg" alt="Masterclass teaser" />
+            <button class="play" onclick="openModal('https://www.youtube.com/embed/dQw4w9WgXcQ')">►</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ribbons">
+    <div class="container ribbons-grid">
+      <div class="ribbon">Science-backed technique</div>
+      <div class="ribbon">Short daily routines</div>
+      <div class="ribbon">Community & coaching</div>
+      <div class="ribbon">Performance-ready skills</div>
+    </div>
+  </section>
+
+  <section class="learn" id="learn">
+    <div class="container">
+      <h2>What You'll Learn</h2>
+      <p class="sub">Six pillars that build range, ease, and control.</p>
+      <div class="cards">
+        <article class="card"><h3>Mind–Body Setup</h3><p>Breath and release patterns to unlock resonance.</p></article>
+        <article class="card"><h3>Embouchure Efficiency</h3><p>Organize pressure, aperture, and airflow.</p></article>
+        <article class="card"><h3>Flexibility & Slots</h3><p>Stabilize partials and widen the in-tune window.</p></article>
+        <article class="card"><h3>Range Conditioning</h3><p>3-, 7-, and 15-minute routines to extend the ceiling.</p></article>
+        <article class="card"><h3>Musicianship First</h3><p>Keep tone and phrasing central as range grows.</p></article>
+        <article class="card"><h3>Performance Transfer</h3><p>Mock-rep cycles and video check-ins.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="program" id="program">
+    <div class="container">
+      <h2>How the Program Works</h2>
+      <div class="timeline">
+        <div class="step"><div class="step-num">1</div><div><h3>Free Masterclass</h3><p>Core framework + starter routine.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div><h3>6-Month Cohort</h3><p>Weekly videos + two live group calls.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div><h3>Community Support</h3><p>Private forum and feedback loops.</p></div></div>
+        <div class="step"><div class="step-num">4</div><div><h3>Lifetime Access</h3><p>Keep lessons and call recordings.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" id="proof">
+    <div class="container">
+      <h2>Results</h2>
+      <div class="slider" data-slider>
+        <div class="slides">
+          <figure class="slide">
+            <blockquote>“I added a fifth above my ceiling—sound is warmer.”</blockquote><figcaption>Conservatory Junior</figcaption>
+          </figure>
+          <figure class="slide">
+            <blockquote>“High C is just another note now.”</blockquote><figcaption>Adult Come-Back Player</figcaption>
+          </figure>
+          <figure class="slide">
+            <blockquote>“Section noticed within two weeks.”</blockquote><figcaption>High School Principal</figcaption>
+          </figure>
+        </div>
+        <button class="prev" aria-label="Previous" onclick="sliderPrev(this)">‹</button>
+        <button class="next" aria-label="Next" onclick="sliderNext(this)">›</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details><summary>Do I need to change my embouchure?</summary><p>No. We emphasize efficiency to evolve what you do.</p></details>
+      <details><summary>How much time does it take?</summary><p>20–30 minutes a day for steady growth.</p></details>
+      <details><summary>Is this safe for students?</summary><p>We use gradual load and tension awareness.</p></details>
+      <details><summary>What if I miss a live call?</summary><p>Call recordings are posted for you to keep.</p></details>
+    </div>
+  </section>
+
+  <section class="apply" id="apply">
+    <div class="container apply-grid">
+      <div>
+        <h2>Watch the Free Masterclass</h2>
+        <form class="signup" onsubmit="return submitEmail(event)">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+          <button class="btn primary" type="submit">Get Access</button>
+          <p class="small">We’ll send the link and follow-ups.</p>
+        </form>
+      </div>
+      <div class="apply-card">
+        <h3>Prefer a 1:1 consult?</h3>
+        <p>Book a free 15-minute discovery call.</p>
+        <a class="btn ghost" href="https://calendly.com/coast2coastcre/30min" target="_blank" rel="noopener">Book on Calendly</a>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">High Range Mastery</div>
+        <p class="small">© <span id="year"></span> Jon Anderson. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+  <div class="modal" id="modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-dialog" role="document" aria-modal="true">
+      <button class="modal-close" aria-label="Close" onclick="closeModal()">×</button>
+      <div id="modal-content" class="modal-content"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
